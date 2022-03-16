@@ -24,7 +24,7 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-public class PrimerTestTest {
+public class TestTest {
 private WebDriver driver;
 
 JavascriptExecutor js;
@@ -45,7 +45,7 @@ public void tearDown() {
 //   {}
 }
 @Test
-public void primerTest() {
+public void Test() {
  driver.get("http://testfire.net/");
  driver.manage().window().setSize(new Dimension(697, 728));
  driver.findElement(By.cssSelector("font")).click();
