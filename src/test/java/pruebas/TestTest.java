@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.Dimension;
@@ -30,6 +31,10 @@ private WebDriver driver;
 JavascriptExecutor js;
 @Before
 public void setUp() {
+	
+ //System.setProperty("webdriver.ie.driver", "..\\Testprime\\Driver\\IEDriverServer.exe");
+ //driver= new InternetExplorerDriver();
+ 
  System.setProperty("webdriver.chrome.driver", "..\\Testprime\\Driver\\chromedriver.exe");
  driver= new ChromeDriver();
  //System.setProperty("webdriver.gecko.driver", "..\\Testprime\\Driver\\geckodriver.exe");
